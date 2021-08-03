@@ -1,0 +1,218 @@
+/* The CSS for login.html and signup.html */
+
+/* Header Image */
+
+#headerimage {
+    width: 25vw;
+    height: 25vw;
+    margin-left: 16.5vw;
+    background-color: grey;
+}
+
+/* Top nav */
+
+.nav-item .nav-link:hover {
+    color: #ffffff !important; 
+}
+
+.navbar {
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 10px 25px 5px rgba(189,189,189,1);
+    padding-left: 2.45%;
+    padding-right: 2.45%;
+}
+
+.ml-auto .nav-item .nav-link {
+    padding: 10px;  
+}
+
+.navbar {
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 10px 25px 5px rgba(189,189,189,1);
+    padding-left: 2.45%;
+    padding-right: 2.45%;
+}
+
+.ml-auto .nav-item .nav-link {
+    padding: 10px;   
+}
+
+.show, .collapsing {
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: -1%;
+    padding-left: 3%;
+}
+
+.shadowed {
+    box-shadow: 0px 10px 10px 5px rgba(189,189,189,1);
+}
+
+.textcenter {
+    text-align: center;
+}
+
+/* Body, columns */
+
+.visiblecontainer {
+    background-color: grey;
+    width: 95vw;
+    margin-top: 4vh;
+    vertical-align: middle;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.col {
+    vertical-align: middle;
+    border-radius: 15px 0px 15px 0px;
+    margin-top: 4%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.col-md {
+    vertical-align: middle;
+    border-radius: 15px 0px 15px 0px;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 2%;
+}
+
+.col i {
+    font-size: 300%;
+    margin-top: 6%;
+}
+
+.col h4,h6 {
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 6%;
+    
+}
+
+.pricingblock {
+    margin-top: 2vh;
+}
+
+.aboutcontainer {
+    margin-top: 4%
+}
+
+.aboutcontainer h3 {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-Bottom: 2%;
+}
+
+.aboutcontainer h2 {
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.pricing {
+    text-align: center;
+    margin-top: 6%;
+}
+
+flex-container {
+    flex-direction: row;
+}
+
+/* Text */
+
+h1 {
+    font-size: 1vw;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+/* Colors */
+
+.bg-secondary {
+    background-color: #d08770 !important;
+}
+
+.nav-item .nav-link:hover {
+    color: #88c0d0 !important; 
+}
+
+small {
+    color: white !important;
+}
+
+button:hover {
+    color: #ffffff !important; 
+    background-color: #88c0d0 !important;
+    border: 1px solid white;
+}
+
+.text-muted {
+    color: white !important;
+}
+
+/* Transitions */
+
+* {
+    transition: 0.3s;
+}
+
+/* Components */
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.btn {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-white {
+    color: white;
+    border: 1px solid white;
+}
+
+/* Mobile specific, mediaqueries */
+
+@media screen and (min-width: 1000px) {
+    h1{
+        font-size: 3.25vw;
+    }
+    h2 {
+        font-size: 2.8vw;
+    }
+}
+  
+  
+@media only screen and (max-width: 1000px) {
+    h1{
+        font-size: 5.0vw;
+    }
+    h2 {
+        font-size: 4.5vw;
+    }
+    .visiblecontainer {
+        width: 85%;
+    }
+    .visiblecontainer {
+        width: 85%;
+    }
+}
+  
+@media screen and (min-width: 800px) {
+    .content .text {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content .text {
+        font-size: 2.5vw;
+    }
+}

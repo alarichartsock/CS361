@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- Loads static directory -->
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weatherapp</title>
+
+  <!--Roboto font CSS -->
+  <link href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static "main.css" %}">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}">
+
+  <!-- Material Icons CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <style>
+    .custom-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+
+    .custom-toggler.navbar-toggler {
+      border-color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top hand navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-secondary">
+    <a class="nav-link text-light" href="">Weatherapp</a>
+    <button type="button" class="navbar-toggler icon-light custom-toggler" data-toggle="collapse"
+      data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ml-auto">
+        <!-- <ul class="navbar-nav ml-auto"></ul> -->
+        <li class="nav-item">
+          <a class="nav-link text-light" href="./search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="./settings">Settings</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="container-fluid bg-secondary p-3 visiblecontainer text-light">
+    <div class="row justify-content-center">
+      <!-- <div class="col bg-secondary text-light" style="margin-top:0%;">
+        <div id="headerimage">Placeholder</div>
+      </div> -->
+      <div class="col bg-secondary text-light" style="margin-top:0%;">
+        <h1><b>Weather For The Future</b></h1>
+        <h2>Unique Weather Reports</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col text-dark" style="margin-top:15vh;margin-left:13vw;">
+      <h2><b>Why use Weatherapp?</b></h1>
+      <h3>We provide custom tailored weather reports for your needs</h2>
+    </div>
+    <div class="col text-light" style="margin-top:5vh;margin-right:10vw;">
+      <div id="headerimage">Placeholder</div>
+    </div>
+  </div>
+
+  <div class="col text-dark" style="margin-top:15vh;text-align:center;">
+    <h2><b>More reasons</b></h1>
+    <h3>People love Weatherapp for these reasons</h2>
+  </div>
+
+  <!-- Reason boxes -->
+  <div class="container">
+    <div class="row" style="text-align:center;">
+      <div class="col text-dark">
+        <i class="material-icons">attach_money</i>
+        <h3>Affordability</h3>
+        <h4>Weatherapp is completely free</h4>
+      </div>
+      <div class="col text-dark">
+        <i class="material-icons">build</i>
+        <h3>Accuracy</h3>
+        <h4>Weather reports are accurate and weather coverage is available for all cities</h4>
+      </div>
+      <div class="col text-dark">
+        <i class="material-icons">beach_access</i>
+        <h3>Ease of use</h3>
+        <h4>The Weatherapp user interface makes it easy to find relevant weather reports </h4>
+      </div>
+      <div class="col text-dark">
+        <i class="material-icons">star_border</i>
+        <h3>Uniqueness</h3>
+        <h4>Nobody else creates weather reports like Weatherapp</h4>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+
+  <!-- Scrolling Javascript -->
+  <script src="{% static "js/scroll.js" %}"></script>
+
+</body>
+
+</html>

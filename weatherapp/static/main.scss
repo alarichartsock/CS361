@@ -1,0 +1,55 @@
+
+
+$theme-colors: (
+    "primary": #88c0d0,
+    "secondary": #d08770,
+    "success": #a3be8c,
+    "info": #81a1c1,
+    "warning": #d08770,
+    "danger": #bf616a,
+    "light": #eceff4,
+    "dark": #606d85,
+) !default;
+
+$colors: (
+    "white":#eceff4,
+    "blue":#5e81ac,
+    "indigo":#81a1c1,
+    "purple":#b48ead,
+    "pink":#b48ead,
+    "red":#bf616a,
+    "orange":#d08770,
+    "yellow":#ebcb8b,
+    "green":#a3be8c,
+    "cyan":#88c0d0,
+    "teal":#8fbcbb,
+    "gray":#606d85,
+    "gray-dark": #434c5e
+) !default;
+
+$black:#2e3440;
+$gray-900:#3b4252;
+$gray-800:#434c5e;
+$gray-700:#4c566a;
+$gray-100:#e5e9f0;
+$gray-200:#d8dee9;
+$gray-300:#b5bcc9;
+$gray-400:#97a1b4;
+$gray-500:#7a869f;
+$gray-600:#606d85;
+$white:#eceff4;
+$blue:#5e81ac;
+$indigo:#81a1c1;
+$purple:#b48ead;
+$pink:#b48ead;
+$red:#bf616a;
+$orange:#d08770;
+$yellow:#ebcb8b;
+$green:#a3be8c;
+$cyan:#88c0d0;
+$teal:#8fbcbb;
+$enable-shadows:true;
+$enable-hover-media-query:true;
+$enable-gradients:true;
+
+@import "node_modules/bootstrap/scss/bootstrap";

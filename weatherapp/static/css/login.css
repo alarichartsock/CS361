@@ -1,0 +1,133 @@
+/* The CSS for login.html and signup.html */
+
+/* Colors */
+
+.bg-secondary {
+    background-color: #d08770 !important;
+}
+
+.text-muted {
+    color: white !important;
+}
+
+small {
+    color: white !important;
+}
+
+/* Navbar */
+
+.nav-item .nav-link:hover {
+    color: #88c0d0 !important; 
+}
+
+.navbar {
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 10px 25px 5px rgba(189,189,189,1);
+    padding-left: 2.45%;
+    padding-right: 2.45%;
+}
+
+.ml-auto .nav-item .nav-link {
+    padding: 10px;   
+}
+
+/* Components */
+
+button:hover {
+    color: #ffffff !important; 
+    background-color: #88c0d0 !important;
+}
+
+#particles-js {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+}
+
+/* Body  */
+
+.visiblecontainer {
+    background-color: grey;
+    margin-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 0px 10px 10px 5px rgba(189,189,189,1);
+}
+
+.btn {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+}
+
+.col-md {
+    vertical-align: middle;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 0px 10px 10px 5px rgba(189,189,189,1);
+    margin-top: .5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 2%;
+
+}
+
+/* Text */
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+/* Transitions */
+
+* {
+    transition: 0.3s;
+}
+
+/* Mobile specific media queries */
+
+@media screen and (min-width: 1000px) {
+    h1{
+        font-size: 3.25vw;
+    }
+    h2 {
+        font-size: 2.8vw;
+    }
+    .visiblecontainer {
+        width: 40vw !important;
+        margin-left: 30vw !important;
+    }
+}
+  
+  
+@media only screen and (max-width: 1000px) {
+    h1{
+        font-size: 5.0vw;
+    }
+    h2 {
+        font-size: 4.5vw;
+    }
+    .visiblecontainer {
+        width: 85% !important;
+        margin-left: 7.5vw !important;
+    }
+}
+  
+@media screen and (min-width: 800px) {
+    .content .text {
+        font-size: 1.5vw;
+    }
+}
+  
+  
+@media only screen and (max-width: 800px) {
+    .content .text {
+        font-size: 2.5vw;
+    }
+}

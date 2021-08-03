@@ -1,0 +1,90 @@
+.dark-mode {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* Dashboard hero text  */
+
+.dashboard-hero {
+    text-align: left;
+    margin-top: 200px;
+}
+
+/* Transitions */
+
+* {
+    transition: 0.3s !important;
+}
+
+/* Colors  */
+
+.bg-secondary {
+    background-color: #d08770 !important;
+}
+
+.page-content-wrapper {
+    height: 100vh;
+}
+
+.icon-light {
+    color: white;
+}
+
+i:hover,a:hover,span:hover {
+    color: #ffffff !important;
+}
+
+button:hover {
+    color: #ffffff !important; 
+    background-color: #88c0d0 !important;
+}
+
+/* Main area */
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    border: 0px solid green;
+    height: 100%;
+}
+
+#page-content-wrapper {
+    transition: 0.5s;
+}
+
+/* Top navbar */
+
+#search {
+    visibility: hidden;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.navbar {
+    border-radius: 0px 0px 15px 0px;
+    box-shadow: 25px 10px 25px 5px rgba(189,189,189,1);
+    padding-left: 2.45%;
+    padding-right: 2.45%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.ml-auto .nav-item .nav-link {
+    padding: 10px;   
+}
+
+.navbar-nav i {
+    padding: 10px;
+}
+
+#headerimage {
+    width: 25vw;
+    height: 25vw;
+    margin-left: 16.5vw;
+    background-color: grey;
+}
+
+/* Header image */
+
