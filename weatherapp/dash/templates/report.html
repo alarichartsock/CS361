@@ -25,24 +25,32 @@
 </head>
 
 <body>
-    <h1 style="margin-top: 10vh;">
+    <h1 style="margin-top: 10vh; text-align: center;">
         Forecast for {{city_weather.city}}
     </h1>
-    <h3>
-        {{city_weather.temperature}} Fahrenheit
-    </h3>
     <h4>
-        Forecast: {{city_weather.description}}
+       
     </h4>
-    <figure class="image is-50x50">
-        <img src="http://openweathermap.org/img/w/{{city_weather.icon}}.png" alt="Image">
-    </figure>
-    <h2>
-        Wave Forecast
-    </h2>
-    <h3>
-        High tide is at 2PM, with low tide at 12PM. 
-    </h3>    
+    <ul class="list-group" style="width:35vw; margin-left:auto; margin-right:auto;">
+      <li class="list-group-item list-group-item-action"><h4>Forecast: {{city_weather.description}}</h4><img src="http://openweathermap.org/img/w/{{city_weather.icon}}.png" alt="Image"></li>
+      <li class="list-group-item list-group-item-action"><h4>Current: {{city_weather.temperature}} °F </h4></li>
+      <li class="list-group-item list-group-item-action"><h4>Min: {{city_weather.temp_min}} °F</h4></li>
+      <li class="list-group-item list-group-item-action"><h4>Max: {{city_weather.temp_max}} °F</h4></li>
+      <li class="list-group-item list-group-item-action"><h4>Humidity: {{city_weather.humidity}}%</h4></li>
+    </ul>
+    <ul>
+    </ul>
+
+    <style>
+      .plotly-graph-div {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+
+    {% if graph %}
+    {{ graph|safe }}
+    {% endif %}
 
   <!-- Page content -->
   <div id="page-content-wrapper">

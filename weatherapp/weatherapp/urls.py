@@ -23,5 +23,5 @@ urlpatterns = [
     path('settings/', dashviews.settings),
     path('report/<city>', dashviews.report),
     path('search/', dashviews.search),
-    path('api/forecast/<str:city>/',dashviews.forecast),
+    path('api/forecast/<str:city>/', dashviews.forecast),
 ]
